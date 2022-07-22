@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* navbar */
+        li{
+            list-style: none;
+        }
+        .navbar{
+            margin: 0;
+            padding: 0;
+            background: #4c62a0;
+            border-radius: 5px;
+            overflow: hidden;
+            /* If anything disappers use the overflow for them to come back */
+        }
+        .navbar li{
+            float: left;
+        }
+        .navbar li a{
+            display: block;
+            /* You can add padding to an inline element, You have to Display Block first */
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            /* To remove the underlines on the textx */
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .navbar li a:hover{
+            background-color: blue;
+        }
+        #Second{
+            color: coral;
+        }
+        /* sidebar */
+        a{
+            text-decoration: none;
+            /* To remove the links */
+        }
+        .sidebar{
+            border: 1px solid #ddd;
+            width: 300px;
+            border-radius: 10px;
+        }
+        /* Use line height to increase the distance between the list items */
+        .sidebar li{
+            line-height: 2.4em;
+            border-bottom: 1px dotted #ddd;
+        }
+        .sidebar li:last-child{
+            border: none;
+        }
+        .sidebar li a{
+            color: black;
+        }
+        .sidebar li a:hover{
+            color: darkgoldenrod;
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="#" style="color: red;">Home</a></li>
+        <li> <a href="#" id="Second">About</a></li>
+        <li> <a href="#">Service</a></li>
+        <li> <a href="#">Contact</a></li>
+    </ul>
+    <ul class="sidebar">
+        <li><a href="#" >Home</a></li>
+        <li> <a href="#">About</a></li>
+        <li> <a href="#">Service</a></li>
+        <li> <a href="#">Contact</a></li>
+    </ul>
+</body>
+</html>
